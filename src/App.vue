@@ -1,30 +1,50 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <Navbar :logo="logo" :alt="alt"/>
+  <Banner :burger="burger"/>
   <router-view/>
+  <Footer/>
 </template>
 
+<script>
+
+import Navbar from './components/Navbar.vue'
+import Banner from './components/Banner.vue'
+import Footer from './components/Footer.vue'
+
+export default {
+  components: {
+    Navbar,
+    Banner,
+    Footer
+  },
+  data() {
+    return {
+      logo: 'img/logo.png',
+      alt: 'Logo',
+      burger: 'img/burger.jpg'
+    }
+  }
+}
+</script>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-#nav {
-  padding: 30px;
-}
+    font-family: Helvetica, sans-serif;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  .container {
+    margin: 3rem 4rem 0 4rem;
+    height: 100vh;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  h1 {
+    text-align: center;
+    color: #222;
+    font-size: 2.625rem;
+  }
 </style>

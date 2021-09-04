@@ -1,18 +1,15 @@
 <template>
-  <div class="container">
-    <h1>Monte o seu hamburger:</h1>
+  <div class="banner">
+    <h2>Make Your Buger</h2>
+    <img :src="burger" alt="">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 
 export default {
-  name: 'Home',
-  props: ['burger'],
-  components: {
-  }
+  name: 'Banner',
+  props: ['burger']
 }
 </script>
 
