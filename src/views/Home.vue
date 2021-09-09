@@ -1,17 +1,19 @@
 <template>
   <div class="container">
     <h1>Monte o seu hamburger:</h1>
+    <Form/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import Form from '../components/Form.vue'
 
 
 export default {
   name: 'Home',
   props: ['burger'],
   components: {
+    Form
   }
 }
 </script>

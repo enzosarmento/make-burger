@@ -77,5 +77,28 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "name": "Enzo",
+      "meat": null,
+      "bread": "Italiano Branco",
+      "optional": [
+        "Bacon",
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "name": "kesia",
+      "meat": "Veggie burger",
+      "bread": "Parmesão e Orégano",
+      "optional": [
+        "Cebola roxa",
+        "Pepino"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    }
+  ]
 }
