@@ -79,26 +79,17 @@
   ],
   "burgers": [
     {
-      "name": "Enzo",
-      "meat": null,
-      "bread": "Italiano Branco",
-      "optional": [
-        "Bacon",
-        "Cheddar"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
-      "name": "kesia",
-      "meat": "Veggie burger",
+      "name": "Enzin da TI",
+      "meat": "Picanha",
       "bread": "Parmesão e Orégano",
       "optional": [
+        "Bacon",
         "Cebola roxa",
+        "Cheddar",
         "Pepino"
       ],
-      "status": "Solicitado",
-      "id": 2
+      "status": "Em produção",
+      "id": 3
     }
   ]
 }

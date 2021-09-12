@@ -7,13 +7,15 @@
 
 <script>
 import Form from '../components/Form.vue'
+import Message from '../components/Message.vue'
 
 
 export default {
   name: 'Home',
   props: ['burger'],
   components: {
-    Form
+    Form,
+    Message
   }
 }
 </script>
